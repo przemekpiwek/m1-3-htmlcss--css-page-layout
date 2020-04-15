@@ -72,6 +72,8 @@ The same site _fixed_
 - Cost-effective development and maintenance
 - Great for SEO
 
+@media (orientation = landscape, and another one)
+
 ---
 
 ### Responsive (cons)

@@ -1,13 +1,35 @@
-body {
+
+* {
     margin: 0;
+    padding: 0;
 }
 
 .nav {
     background-color: #383737;
 }
-
 .nav-dropdown {
     color: #fff;
     text-decoration: none;
     display: inline-block;
+    position: relative;
+    padding: 20px;
+    width: 70px;
+}
+.drop-down{
+    display: none;
+}
+.nav-dropdown:hover > .drop-down{
+    display: block;
+    position: absolute;
+    background: rgb(0, 153, 255);
+    top: 100%;
+    left: 0%;
+}
+li{
+    display: inline-block;
+    width: 70px;
+    padding: 20px;
+}
+li:hover{
+    background: rgb(8, 117, 219);
 }

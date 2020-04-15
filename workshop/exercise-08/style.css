@@ -1,49 +1,91 @@
 body {
     margin: 0;
-    font-family: Poppins, sans-serif;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
 }
-
 .header {
-
+    text-align: center;
+    background: rgb(0, 119, 255);
+    padding: 15px;
+    color: white;
+    box-shadow: 0px -10px 40px rgb(59, 59, 59);
+    margin: 0 0 40px 0;
 }
 
 .registration-form {
-
+    position: relative;
+    width: 80vw;
+    border: 1px #dddbdb solid;
+    margin: 0 auto;
+    box-shadow: #fbfbfb 0 0 10px;
+    border-radius: 5px;
+    padding: 10px;
 }
 
+/* .registration-form > label, .registration-form div label {
+    text-align: center;
+} */
 .text-field {
-
+    position: relative;
+    width: 30vw;
+    height: 30px;
+    border: 1px rgb(0, 119, 255) solid;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: block;
 }
+
+
 
 .radio-label,
 .checkbox-label {
-
+    text-align: left;
+    margin-left: 0;
 }
 
 label {
-
+    display: block;
+    text-align: center;
 }
 
 .section {
-
+    margin-bottom: 20px;
+    border-top: 1px solid grey;
+}
+.section:nth-of-type(2){
+    border-top: 1px solid rgb(202, 202, 202);
+    margin-top: 10px;
 }
 
 .section > label {
-
+    margin-bottom:10px;
+    text-align: left;
 }
 
 select {
-
+    margin-left: 10px;
 }
 
 textarea {
-
+    background-color: #dbdada;
+    border: 0px;
+    text-decoration: none;
+    width: 100%;
+    height: 80px;
 }
 
 .form-button {
-
+    position: relative;
+    display: block;
+    margin: 20px auto;
+    padding: 15px 25px;
+    border: 1px solid rgb(0, 119, 255);
 }
 
 .form-button:hover {
-    
+    background-color: rgb(0, 119, 255) ;
+    color: white;
+    cursor: pointer;
 }

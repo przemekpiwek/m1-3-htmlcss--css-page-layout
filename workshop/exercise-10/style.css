@@ -8,9 +8,48 @@ body {
   align-items: center;
   justify-content: center;
 }
+.main > div{
+  text-align: center;
+}
 
 .fast {
+  animation: fadeIn 1s ease-in-out;
+  animation-fill-mode: both;
 }
 
 .cool {
+  background: dodgerblue;
+  padding: 25px;
+  color: white;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  box-shadow: 0 0px 10px -5px black;
+  outline: 0px;
+  cursor:pointer;
+  
+}
+.cool:hover{
+  animation: bounce 1s ease-in-out;
+}
+
+@keyframes fadeIn{
+  0%{
+    opacity: 0%;
+    transform: translate(100px);
+  }
+  100%{
+    opacity: 100%;
+    transform: translate(0px);
+  }
+}
+@keyframes bounce{
+  80%{
+    transform: scale(1.5) rotate(360deg);
+  }
+  100%{
+    transform:scale(.7) rotate(360deg);
+    
+  }
+
 }

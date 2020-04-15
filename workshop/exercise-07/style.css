@@ -1,7 +1,40 @@
-body {
+*{
   margin: 0;
 }
-
+.container{
+  margin: 40px;
+}
+header{
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+}
+ul{
+  display: flex;
+  flex-direction: row;
+}
+.desktop-nav li{
+  display: block;
+  list-style-type: none;
+}
+li:not(:last-child){
+  margin-right: 50px;
+}
 .mobile-nav-button img {
   width: 18px;
+}
+.mobile-nav{
+  position: absolute;
+  right: 0%;
+  display: none;
+}
+
+@media (max-width: 800px){
+  .desktop-nav{
+    display: none;
+  }
+  .mobile-nav{
+    display: block;
+  }
 }
